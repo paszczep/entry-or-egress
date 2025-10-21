@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}:c{% endblock %}
+
+{% block body %}
+<div class="notification mybox">
+  <h1 class="title">BŁĄD.</h1>
+  <h2 class="subtitle">Przekierowanie za <strong id="sec">3</strong> sekund...</h2>
+  <a id="try-again" class="button is-large" href="/">Albo teraz (Enter)</a>
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/error.js') }}" defer></script>
+{% endblock %}

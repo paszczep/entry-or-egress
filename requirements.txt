@@ -1,0 +1,8 @@
+flask[async]
+
+databases[postgresql]
+
+uvicorn
+
+asgiref
+

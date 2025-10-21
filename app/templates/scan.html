@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Skanuj{% endblock %}
+
+{% block body %}
+
+<form method="post" action="/scan" autocomplete="off">
+  <input class="input is-large is-info" type="password" name="code" autocomplete="off" autofocus required
+    placeholder="Zeskanuj kartę...">
+</form>
+
+{% endblock %}

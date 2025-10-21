@@ -1,0 +1,16 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.mybox {
+  min-width: 450px;
+  min-height: 200px;
+}
+
+.button.is-fixed {
+  width: 10rem;
+  box-sizing: border-box;
+}

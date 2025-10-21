@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Cześć!{% endblock %}
+
+{% block body %}
+
+<div class="notification mybox">
+  <h1 class="title is-1">{{worker.name}}</h1>
+    
+    <div class="buttons">
+
+      <form id="confirm-form" method="post" action="{{ url_for('go') }}">
+        <input type="hidden" name="worker_id" value="{{ worker.id }}">
+        <button id="confirm-btn" type="submit" class="button is-large is-success is-fixed is-inverted">Tak</button>
+      </form>
+      
+      <a id="cancel-link" tabindex="0" href="/" class="button is-large is-danger">Nie (Enter)</a>
+    
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/worker.js') }}" defer></script>
+{% endblock %}
