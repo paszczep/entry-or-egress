@@ -12,7 +12,7 @@ services:
     expose: ["8000"]
     environment:
       TZ: Europe/Warsaw
-      VIRTUAL_HOST: odbijacz.elektrometal-energetyka.pl
+      VIRTUAL_HOST: (...)
       VIRTUAL_PORT: "8000"
     networks: [microservices]
 
